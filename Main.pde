@@ -1,7 +1,6 @@
 import processing.sound.*;
 SoundFile file;
-
-// Refactored code with classes
+// images and time variables
 PImage kitchenBackground, back, bottom, top, button, coffee, windowMidday, windowMorning, windowNight;
 PImage[] windows; 
 int imageSwitcher = 0; 
@@ -51,7 +50,7 @@ void draw() {
     lastSwitchTime = millis(); 
   }
 
-  // Display the current image
+  // Display the windoqw image
   image(windows[imageSwitcher], 0, 0, width, height);
 }
 
